@@ -88,8 +88,8 @@ docker-compose up -d           # Para ejecución rápida en segundo plano sin lo
 
 4. Probar la API rápidamente
 
-Puedes importar esta colección en Postman para probar todos los endpoints de la API:
-[Descargar colección de Postman](./postman/Java-Microservices-Ecommerce.postman_collection.json)
+- Puedes importar esta colección en Postman para probar todos los endpoints de la API:
+- [Descargar colección de Postman](./postman/Java-Microservices-Ecommerce.postman_collection.json)
 
 
 ## 🔮 Futuras mejoras / Roadmap
