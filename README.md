@@ -60,14 +60,16 @@ Este enfoque permite que cada microservicio sea escalable, independiente y fáci
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/AndyCipleu/ecommerceApp.git
+git clone https://github.com/AndyCipleu/ecommerceApp.git # Para clonar el proyecto
 cd ecommerceApp
 ```
 
 2. Levantar los contenedores con Docker Compose:
 
-**docker-compose up --build -d**  -> Para ejecución en segundo plano junto con logs.
-**docker-compose up -d** -> Para ejecución rápida en segundo plano sin logs.
+```bash
+docker-compose up --build -d   # Para ejecución en segundo plano junto con logs
+docker-compose up -d           # Para ejecución rápida en segundo plano sin logs
+
 
 3. Acceso a servicios:
 
@@ -107,5 +109,7 @@ Puedes importar esta colección en Postman para probar todos los endpoints de la
 Nombre: Andy Cipleu
 
 LinkedIn: https://www.linkedin.com/in/andrei-claudiu-cipleu-30a625300/
+
 Email: andycipleu@gmail.com
+
 GitHub: https://github.com/AndyCipleu
