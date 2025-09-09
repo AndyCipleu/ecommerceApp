@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "0313d773-c90f-45f8-a3b6-52ece1499a59",
+		"name": "Java-Microservices-Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41191076"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"Andy\",\r\n  \"lastname\": \"García\",\r\n  \"email\": \"andy@example.com\",\r\n  \"address\": {\r\n    \"street\": \"Calle Mayor\",\r\n    \"houseNumber\": \"123\",\r\n    \"zipCode\": \"28013\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"Andy\",\r\n  \"lastname\": \"García\",\r\n  \"email\": \"andy@example.com\",\r\n  \"address\": {\r\n    \"street\": \"Calle Mayor\",\r\n    \"houseNumber\": \"123\",\r\n    \"zipCode\": \"28013\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"Andy\",\r\n  \"lastname\": \"García\",\r\n  \"email\": \"andy@example.com\",\r\n  \"address\": {\r\n    \"street\": \"Calle Mayor\",\r\n    \"houseNumber\": \"123\",\r\n    \"zipCode\": \"28013\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer/s",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8222/api/v1/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product/s",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"reference\": \"ORD-20250906-001\",\r\n  \"amount\": 150.75,\r\n  \"paymentMethod\": \"CREDIT\",\r\n  \"customerId\": \"68bc0f975ec8e7488eba3190\",\r\n  \"products\": [\r\n    {\r\n      \"productId\": 101,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"productId\": 102,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"reference\": \"ORD-20250906-001\",\r\n  \"amount\": 150.75,\r\n  \"paymentMethod\": \"CREDIT\",\r\n  \"customerId\": \"68bc0f975ec8e7488eba3190\",\r\n  \"products\": [\r\n    {\r\n      \"productId\": 101,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"productId\": 102,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order/s",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"reference\": \"ORD-20250906-001\",\r\n  \"amount\": 150.75,\r\n  \"paymentMethod\": \"CREDIT\",\r\n  \"customerId\": \"68bc0f975ec8e7488eba3190\",\r\n  \"products\": [\r\n    {\r\n      \"productId\": 101,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"productId\": 102,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8222/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8222",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
