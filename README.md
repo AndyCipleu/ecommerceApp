@@ -44,6 +44,8 @@ Este proyecto implementa un sistema de e-commerce distribuido basado en microser
 
 **Notification Service**: Responsable de enviar correos electrónicos a los clientes confirmando pedidos y pagos. Funciona como consumidor de mensajes de Kafka generados por los servicios de Orders y Payment.
 
+
+
 Además, la arquitectura incluye componentes de infraestructura y soporte:
 
 **API Gateway**: Punto de entrada único que enruta las solicitudes hacia los microservicios correspondientes.
@@ -69,7 +71,7 @@ cd ecommerceApp
 ```bash
 docker-compose up --build -d   # Para ejecución en segundo plano junto con logs
 docker-compose up -d           # Para ejecución rápida en segundo plano sin logs
-
+```
 
 3. Acceso a servicios:
 
