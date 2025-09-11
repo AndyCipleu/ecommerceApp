@@ -115,3 +115,10 @@ LinkedIn: https://www.linkedin.com/in/andrei-claudiu-cipleu-30a625300/
 Email: andycipleu@gmail.com
 
 GitHub: https://github.com/AndyCipleu
+
+## 📄 Créditos
+
+Este proyecto fue desarrollado por mí como ejercicio de aprendizaje, siguiendo como referencia el tutorial de [Ali Bouali](https://www.youtube.com/watch?v=jdeSV0GRvwI&t=6059s)
+
+El código original está licenciado bajo la [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
